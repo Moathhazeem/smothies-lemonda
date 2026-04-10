@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+:root {
+  --primary: #12bca2;
+  --secondary: #6d15df;
+}
+h1,h2,h3 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  color: #333;
+  font-family: 'Poppins';
+  background: #f2f2f2;
+}
+nav {
+  background: var(--primary);
+  padding: 10px 20px;
+  text-align: center;
+}
+nav a {
+  color: #f2f2f2;
+  margin: 10px;
+  display: inline-block;
+}
+nav h1 {
+  color: #fff;
+}
+.page {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.smoothies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.page.home {
+  text-align: center;
+}
+.page.home p {
+  margin: 20px auto;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+form label {
+  display: block;
+  margin: 10px 0;
+}
+form input, form textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+form button {
+  margin-top: 20px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Smoothie Card Styles */
+.smoothie-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.smoothie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+.smoothie-card h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+.smoothie-card p {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.smoothie-card .rating {
+  display: inline-block;
+  background: var(--secondary);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.smoothie-card .buttons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.smoothie-card .buttons i {
+  cursor: pointer;
+  color: #999;
+  transition: color 0.2s;
+}
+.smoothie-card .buttons i:hover {
+  color: var(--primary);
+}
+.smoothie-card .buttons a {
+  color: #999;
+  text-decoration: none;
+}
+.smoothie-card .buttons a:hover {
+  color: var(--primary);
+}
+.error {
+  color: #e7195a;
+  background: #ffefef;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.order-by {
+  margin: 20px 0;
+}
+.order-by p {
+  margin: 10px 0;
+}
+.order-by button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+.order-by button:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
